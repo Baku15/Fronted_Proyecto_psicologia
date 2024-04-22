@@ -1,19 +1,19 @@
-<mat-toolbar color="primary" class="mat-toolbar-custom">
-  <span>Proyecto UCB PSICOLOGIA</span>
-  <span class="spacer"></span>
-  <span routerLink="/home" class="nav-link">Agendar sesion </span>
-  <span routerLink="/features" class="nav-link">Calendario</span>
+<header class="text-white bg-blue-400 body-font">
+  <div class="container mx-auto flex p-2 flex-wrap md:flex-nowrap items-center">
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg><a routerLink="/welcome-page" class="ml-3 text-xl">UCB PSICOLOGIA</a>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a routerLink="/pacientes" class="mr-5 hover:text-white">Pacientes</a>
+      <a routerLink="/terapeutas" routerLinkActive="active" class="mr-5 hover:text-white">Terapeutas</a>
+      <a routerLink="/registro-terapeutas" routerLinkActive="active" class="mr-5 hover:text-white">Registro terapeutas </a>
+<a routerLink="/horarios" routerLinkActive="active" class="mr-5 hover:text-white">Horarios</a>
 
-  <span routerLink="/pricing" class="nav-link">Terapeutas</span>
-  <span routerLink="/pricing" class="nav-link">Mis Horarios</span>
-  <span routerLink="/pricing" class="nav-link">Terapeutas</span>
-
- <button mat-icon-button>
-    <mat-icon>exit_to_app</mat-icon>
-  </button>
-
-   <button mat-icon-button>
-    <mat-icon>notifications</mat-icon>
-  </button>
-</mat-toolbar>
-
+    </nav>
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+  </div>
+</header>

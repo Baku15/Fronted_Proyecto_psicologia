@@ -4,12 +4,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavbarComponent,LoginComponent, MatToolbarModule, MatIconModule],
+  imports: [RouterOutlet,CommonModule,NavbarComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
