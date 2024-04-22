@@ -1,0 +1,103 @@
+<!-- persona-form.component.html -->
+<div class="container mt-5">
+  <h2>Formulario de Persona</h2>
+  <div class="center-container">
+    <form [formGroup]="personaForm" (ngSubmit)="guardar()" class="mat-form">
+
+      <mat-form-field class="full-width">
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName" required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Mother's Last Name</mat-label>
+        <input matInput formControlName="mothersLastName" required>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Phone Number</mat-label>
+        <input matInput formControlName="phoneNumber" required>
+      </mat-form-field>
+
+  <mat-form-field class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" required>
+      </mat-form-field>
+
+  <mat-form-field class="full-width">
+        <mat-label>Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="birthdate" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+
+
+      <mat-form-field class="full-width">
+        <mat-label>Identity Gender</mat-label>
+        <mat-select formControlName="identityGender" required>
+          <mat-option value="F">F</mat-option>
+          <mat-option value="M">M</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Birth Gender</mat-label>
+        <mat-select formControlName="birthGender" required>
+          <mat-option value="F">F</mat-option>
+          <mat-option value="M">M</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+
+      <mat-form-field class="full-width">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="address">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>CI Number</mat-label>
+        <input matInput formControlName="ciNumber">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>CI Complement</mat-label>
+        <input matInput formControlName="ciComplement">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>CI Extension</mat-label>
+        <input matInput formControlName="ciExtension">
+      </mat-form-field>
+
+      <mat-checkbox formControlName="status">Status</mat-checkbox>
+
+      <mat-form-field class="full-width">
+        <mat-label>txUser</mat-label>
+        <input matInput formControlName="txUser">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>txDate</mat-label>
+        <input matInput [matDatepicker]="txDatepicker" formControlName="txDate">
+        <mat-datepicker-toggle matSuffix [for]="txDatepicker"></mat-datepicker-toggle>
+        <mat-datepicker #txDatepicker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>txHost</mat-label>
+        <input matInput formControlName="txHost">
+      </mat-form-field>
+
+
+      <button mat-raised-button color="primary" class="full-width">Guardar</button>
+    </form>
+  </div>
+</div>
+

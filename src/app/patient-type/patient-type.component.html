@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <h2>Formulario de Tipo de Paciente</h2>
+  <div class="center-container">
+    <form [formGroup]="patientTypeForm" (ngSubmit)="guardar()" class="mat-form">
+      <div class="form-row">
+
+    <mat-form-field class="full-width">
+          <mat-label>Tipo de Paciente</mat-label>
+          <input matInput formControlName="patientType" required>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>txUser</mat-label>
+          <input matInput formControlName="txUser" required>
+        </mat-form-field>
+<mat-form-field class="full-width">
+        <mat-label>txDate</mat-label>
+        <input matInput [matDatepicker]="txDatepicker" formControlName="txDate">
+        <mat-datepicker-toggle matSuffix [for]="txDatepicker"></mat-datepicker-toggle>
+        <mat-datepicker #txDatepicker></mat-datepicker>
+      </mat-form-field>
+
+
+        <mat-form-field class="full-width">
+          <mat-label>txHost</mat-label>
+          <input matInput formControlName="txHost" required>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Status</mat-label>
+          <mat-select formControlName="status" required>
+            <mat-option value="true">Activo</mat-option>
+            <mat-option value="false">Inactivo</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      </div>
+
+      <button mat-raised-button color="primary" class="full-width">Guardar</button>
+    </form>
+  </div>
+</div>
+

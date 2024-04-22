@@ -1,0 +1,32 @@
+.container {
+  max-width: 600px; /* Doble del ancho para acomodar dos columnas */
+  margin: auto;
+  text-align: center; /* Alineación centrada del texto */
+}
+
+.center-container {
+  display: flex;
+  flex-wrap: wrap; /* Permitir el ajuste de la fila */
+  justify-content: space-between; /* Espacio entre elementos */
+}
+
+.full-width {
+  width: calc(50% - 10px); /* Ancho del 50% del contenedor menos el margen */
+  margin: 5px; /* Margen alrededor de cada elemento */
+}
+
+button {
+  width: 100%; /* Ancho completo del botón */
+}
+
+/* persona-form.component.css */
+
+.custom-date-field .mat-form-field-infix {
+  border-radius: 25px; /* Ejemplo de estilo: bordes redondeados */
+  border: 2px solid #ccc; /* Ejemplo de estilo: borde de 2px y color gris */
+  padding: 10px; /* Ejemplo de estilo: relleno interno */
+}
+
+.custom-date-field .mat-form-field-wrapper {
+  margin-bottom: 15px; /* Ejemplo de estilo: espacio debajo del campo */
+}

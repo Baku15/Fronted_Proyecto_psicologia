@@ -1,0 +1,36 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.center-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-width {
+  width: 100%;
+  margin: 5px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+mat-form-field.full-width {
+  flex: 1 1 calc(50% - 10px); /* Ajusta el ancho de los campos */
+  margin: 5px; /* Margen alrededor de cada campo */
+}
+
+mat-form-field.full-width:first-child {
+  flex: 1 1 100%; /* Ajusta el ancho del primer campo para que ocupe toda la fila */
+}
+
+button {
+  width: 100%;
+}
+
